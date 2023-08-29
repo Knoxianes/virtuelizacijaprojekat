@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<STAVKE>
+	<row>
+		<ID>101</ID>
+		<FILE_NAME>forecast_2023_01_17.csv</FILE_NAME>
+	</row>
+	<row>
+		<ID>102</ID>
+		<FILE_NAME>measured_2023_01_22.csv</FILE_NAME>
+	</row>
+</STAVKE>

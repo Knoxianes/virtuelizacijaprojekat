@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<STAVKE>
+	<row>
+		<ID>101</ID>
+		<TIME_STAMP>2023-04-12 11:15:43.042</TIME_STAMP>
+		<MESSAGE_TYPE>Error</MESSAGE_TYPE>
+		<MESSAGE>U datoteci forecast_2023_01_23.csv nalazi se neodgovarajući broj redova: 26</MESSAGE>
+	</row>
+	<row>
+		<ID>102</ID>
+		<TIME_STAMP>2023-04-12 11:23:14.191</TIME_STAMP>
+		<MESSAGE_TYPE>Info</MESSAGE_TYPE>
+		<MESSAGE>Datoteka forecast_2023_01_24.csv je uspesno procitana</MESSAGE>
+	</row>
+</STAVKE>

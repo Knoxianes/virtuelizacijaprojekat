@@ -1,0 +1,6 @@
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Common\bin\Debug\Common.dll
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Common\bin\Debug\Common.pdb
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Common\obj\Debug\Common.dll
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Common\obj\Debug\Common.pdb

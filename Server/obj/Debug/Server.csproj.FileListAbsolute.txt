@@ -1,0 +1,11 @@
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Server\bin\Debug\Server.exe.config
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Server\bin\Debug\Server.exe
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Server\bin\Debug\Server.pdb
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Server\bin\Debug\Common.dll
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Server\bin\Debug\Common.pdb
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Server\obj\Debug\Server.exe
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\Server\obj\Debug\Server.pdb
