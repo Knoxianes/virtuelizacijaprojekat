@@ -1,0 +1,11 @@
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\DataBase\bin\Debug\DataBase.exe.config
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\DataBase\bin\Debug\DataBase.exe
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\DataBase\bin\Debug\DataBase.pdb
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\DataBase\bin\Debug\Common.dll
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\DataBase\bin\Debug\Common.pdb
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\DataBase\obj\Debug\DataBase.csproj.SuggestedBindingRedirects.cache
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\DataBase\obj\Debug\DataBase.exe
+C:\Users\strah\OneDrive\Dokumenti\GitHub\virtuelizacijaprojekat\DataBase\obj\Debug\DataBase.pdb

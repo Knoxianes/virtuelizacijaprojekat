@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +11,7 @@ namespace Common
     {
         Info,Warning,Error
     }
+    [DataContract]
     public class Audit
     {
         private uint _id;
@@ -25,9 +27,13 @@ namespace Common
             MessageType = messageType;
         }
 
+        [DataMember]
         public uint Id { get => _id; set => _id = value; }
+        [DataMember]
         public DateTime TimeStamp { get => _timeStamp; set => _timeStamp = value; }
+        [DataMember]
         public string Message { get => _message; set => _message = value; }
+        [DataMember]
         public MessageType MessageType { get => _messageType; set => _messageType = value; }
     }
 }

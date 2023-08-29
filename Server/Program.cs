@@ -11,7 +11,7 @@ namespace Server
     {
         static void Main(string[] args)
         {
-            ServiceHost svc = new ServiceHost(typeof(DataBase));
+            ServiceHost svc = new ServiceHost(typeof(Servis));
             svc.Open();
             Console.WriteLine("Server je pokrenut");
             Console.ReadLine();

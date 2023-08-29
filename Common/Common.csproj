@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,7 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Audit.cs" />
-    <Compile Include="IDatabase.cs" />
+    <Compile Include="IDataBase.cs" />
+    <Compile Include="IServis.cs" />
     <Compile Include="ImportedFile.cs" />
     <Compile Include="Load.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

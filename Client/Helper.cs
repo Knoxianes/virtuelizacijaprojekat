@@ -18,8 +18,8 @@ namespace Client
             {
                 return;
             }
-            ChannelFactory<IDatabase> factory = new ChannelFactory<IDatabase>("Server");
-            IDatabase kanal = factory.CreateChannel();
+            ChannelFactory<IServis> factory = new ChannelFactory<IServis>("Server");
+            IServis kanal = factory.CreateChannel();
             using (MemoryStream memoryStream = new MemoryStream())
             {
                 foreach (string file in files)
@@ -29,7 +29,7 @@ namespace Client
                     {
                         fileStream.CopyTo(memoryStream);
                         memoryStream.Position = 0;
-                        kanal.Load(memoryStream);
+                        kanal.Load(memoryStream, file.Split('\\')[file.Split('\\').Length - 1]);
                     }
                 }
             }
