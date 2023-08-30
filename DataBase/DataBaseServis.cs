@@ -327,6 +327,7 @@ namespace DataBase
 
                     stavke.AppendChild(row);
                     doc.Save(pathToXML + "TBL_LOAD.xml");
+
                 }
             }
         }
@@ -363,7 +364,22 @@ namespace DataBase
 
         private List<Load> ReadLoadXML()
         {
-            throw new NotImplementedException();
+            List<Load> loads = new List<Load>();
+            XmlDocument doc = new XmlDocument();
+            doc.Load(pathToXML + "TBL_LOAD.xml");
+            XmlElement stavke = doc.DocumentElement;
+            foreach(XmlNode row in stavke.ChildNodes)
+            {
+                uint id = uint.Parse(row.ChildNodes[0].InnerText);
+                DateTime dateTime = DateTime.Parse(row.ChildNodes[1].InnerText);
+                double forecastValue = double.Parse(row.ChildNodes[2].InnerText);
+                double measuredValue  = double.Parse(row.ChildNodes[3].InnerText);
+                double apd = double.Parse(row.ChildNodes[4].InnerText);
+                double squareDeviation = double.Parse(row.ChildNodes[5].InnerText);
+                uint importedFileId = uint.Parse(row.ChildNodes[6].InnerText);
+                loads.Add(new Load(id, dateTime, forecastValue, measuredValue, apd, squareDeviation, importedFileId));
+            }
+            return loads;
         }
 
 

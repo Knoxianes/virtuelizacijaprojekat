@@ -2,97 +2,103 @@
 <STAVKE>
   <row>
     <ID>1</ID>
-    <TIME_STAMP>2023-08-30 23:38:34</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:25:42</TIME_STAMP>
+    <MESSAGE_TYPE>Info</MESSAGE_TYPE>
+    <MESSAGE_TYPE>Datoteka forecast_2023_01_17.csv je uspesno procitana</MESSAGE_TYPE>
+  </row>
+  <row>
+    <ID>1</ID>
+    <TIME_STAMP>2023-08-31 00:26:24</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka forecast_2023_01_17.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>2</ID>
-    <TIME_STAMP>2023-08-30 23:38:35</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:25</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka forecast_2023_01_18.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>3</ID>
-    <TIME_STAMP>2023-08-30 23:38:35</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:26</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka forecast_2023_01_19.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>4</ID>
-    <TIME_STAMP>2023-08-30 23:38:36</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:26</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka forecast_2023_01_20.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>5</ID>
-    <TIME_STAMP>2023-08-30 23:38:37</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:27</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka forecast_2023_01_21.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>6</ID>
-    <TIME_STAMP>2023-08-30 23:38:37</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:28</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka forecast_2023_01_22.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>7</ID>
-    <TIME_STAMP>2023-08-30 23:38:38</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:29</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka forecast_2023_01_23.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>8</ID>
-    <TIME_STAMP>2023-08-30 23:38:38</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:30</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka forecast_2023_01_24.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>9</ID>
-    <TIME_STAMP>2023-08-30 23:38:41</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:41</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka measured_2023_01_17.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>10</ID>
-    <TIME_STAMP>2023-08-30 23:38:41</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:42</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka measured_2023_01_18.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>11</ID>
-    <TIME_STAMP>2023-08-30 23:38:42</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:43</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka measured_2023_01_19.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>12</ID>
-    <TIME_STAMP>2023-08-30 23:38:42</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:44</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka measured_2023_01_20.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>13</ID>
-    <TIME_STAMP>2023-08-30 23:38:43</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:45</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka measured_2023_01_21.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>14</ID>
-    <TIME_STAMP>2023-08-30 23:38:44</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:46</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka measured_2023_01_22.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>15</ID>
-    <TIME_STAMP>2023-08-30 23:38:44</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:46</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka measured_2023_01_23.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
   <row>
     <ID>16</ID>
-    <TIME_STAMP>2023-08-30 23:38:45</TIME_STAMP>
+    <TIME_STAMP>2023-08-31 00:26:47</TIME_STAMP>
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka measured_2023_01_24.csv je uspesno procitana</MESSAGE_TYPE>
   </row>

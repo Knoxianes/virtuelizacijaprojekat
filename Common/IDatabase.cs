@@ -25,7 +25,7 @@ namespace Common
         void AddAudit(Audit audit, DataBaseType dbtype);
         [OperationContract]
         void AddImportedFile(ImportedFile importedFile, DataBaseType dbtype);
-
+        [OperationContract]
         List<Load> ReadLoad(DataBaseType dbtype);
 
     }
