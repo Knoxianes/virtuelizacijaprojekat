@@ -12,6 +12,6 @@ namespace Common
     public interface IServis
     {
         [OperationContract]
-        void Load(MemoryStream memoryStream, string fileName);
+        void Load(MemoryStream memoryStream, string fileName, FileType fileType);
     }
 }

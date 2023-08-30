@@ -11,7 +11,7 @@ namespace Client
 {
     public static  class Helper
     {
-        public static void LoadData(string path)
+        public static void LoadData(string path, FileType fileType)
         {
             string[]files = Directory.GetFiles(path);
             if (files == null || files.Length <= 0)
@@ -20,21 +20,23 @@ namespace Client
             }
             ChannelFactory<IServis> factory = new ChannelFactory<IServis>("Server");
             IServis kanal = factory.CreateChannel();
-            using (MemoryStream memoryStream = new MemoryStream())
-            {
+
                 foreach (string file in files)
                 {
-
-                    using (FileStream fileStream = new FileStream(file, FileMode.Open, FileAccess.Read))
+                    using (MemoryStream memoryStream = new MemoryStream())
                     {
-                        fileStream.CopyTo(memoryStream);
-                        memoryStream.Position = 0;
-                        kanal.Load(memoryStream, file.Split('\\')[file.Split('\\').Length - 1]);
+
+                        using (FileStream fileStream = new FileStream(file, FileMode.Open, FileAccess.Read))
+                        {
+                        
+                            fileStream.CopyTo(memoryStream);
+                            memoryStream.Position = 0;
+                            kanal.Load(memoryStream, file.Split('\\')[file.Split('\\').Length - 1],fileType);
+                        
+                        
+                        }
                     }
                 }
-            }
-
-               
         }
     }
 }

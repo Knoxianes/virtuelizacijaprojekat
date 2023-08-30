@@ -10,7 +10,7 @@ namespace Common
 {
     public enum DataBaseType
     {
-        XML,INMEMORY
+       XML,INMEMORY
     }
     public enum FileType
     {
@@ -22,9 +22,9 @@ namespace Common
         [OperationContract]
         void AddLoad(Load load, DataBaseType dbtype, FileType filetype);
         [OperationContract]
-        void AddAudit(Audit load, DataBaseType dbtype);
+        void AddAudit(Audit audit, DataBaseType dbtype);
         [OperationContract]
-        void AddImportedFile(ImportedFile load, DataBaseType dbtype);
+        void AddImportedFile(ImportedFile importedFile, DataBaseType dbtype);
 
         List<Load> ReadLoad(DataBaseType dbtype);
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,16 +11,23 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            while (true)
+            Console.WriteLine("Unesite putanju do direktirojuma sa datotekama koje trebaju da se ucitaju forecast:");
+            string path = Console.ReadLine();
+            if (path == null)
             {
-                Console.WriteLine("Unesite putanju do direktirojuma sa datotekama koje trebaju da se ucitaju:");
-                string path = Console.ReadLine();
-                if (path == null)
-                {
-                    Console.WriteLine("Niste uneli dobru putanju");
-                }
-                Helper.LoadData(path);
+                Console.WriteLine("Niste uneli dobru putanju");
             }
+            Helper.LoadData(path,FileType.PROGNOZIRANO);
+
+            Console.WriteLine("Unesite putanju do direktirojuma sa datotekama koje trebaju da se ucitaju measured:");
+            string path2 = Console.ReadLine();
+            if (path == null)
+            {
+                Console.WriteLine("Niste uneli dobru putanju");
+            }
+            Helper.LoadData(path2, FileType.OSTVARENO);
+            Console.ReadLine();
+
         }
     }
 }
