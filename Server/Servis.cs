@@ -17,6 +17,59 @@ namespace Server
         private static uint auditrow_count = 0;
         private static uint importedfilerow_count = 0;
         private static uint loadrow_count = 0;
+        private static DataBaseType dbtype;
+        public delegate void UpdateDBDelegate(List<Load> loads, DataBaseType dataBaseType);
+        public event UpdateDBDelegate UpdateDbEvent;
+
+        public void Calculate()
+        {
+            ChannelFactory<IDataBase> factory = new ChannelFactory<IDataBase>("DataBase");
+            IDataBase kanal = factory.CreateChannel();
+            List<Load> loads = kanal.ReadLoad(dbtype);
+            if (ConfigurationManager.AppSettings["calculation"].ToLower() == "apd")
+            {
+                loads = CalculateAPD(loads);
+                UpdateDbEvent += kanal.UpdateLoads;
+            }
+            else if (ConfigurationManager.AppSettings["calculation"].ToLower() == "sd")
+            {
+                loads = CalculateSD(loads);
+                UpdateDbEvent += kanal.UpdateLoads;
+            }
+            else
+            {
+                Console.WriteLine("Doslo je do greske u konfiguraciji aplikacije!!! ");
+                throw new Exception("Doslo je do greske u konfiguraciji aplikacije!!!");
+            }
+            UpdateDbEvent?.Invoke(loads, dbtype);
+            
+        }
+
+        private  List<Load> CalculateSD(List<Load> loads)
+        {
+            foreach(Load load in loads)
+            {
+                if(load.MeasuredValue != -1 && load.ForecastValue != -1)
+                {
+                    load.SquareDeviation = Math.Pow((load.MeasuredValue - load.ForecastValue) / load.MeasuredValue,2);
+                }
+            }
+            return loads;
+        }
+
+        private List<Load> CalculateAPD(List<Load> loads)
+        {
+            foreach (Load load in loads)
+            {
+                if (load.MeasuredValue != -1 && load.ForecastValue != -1)
+                {
+                    load.AbsolutePercentageDeviation = Math.Abs(load.MeasuredValue - load.ForecastValue) / load.MeasuredValue * 100;
+                }
+            }
+            return loads;
+           
+        }
+
         public void Load(MemoryStream memoryStream, string fileName, FileType fileType)
         {
 
@@ -33,7 +86,7 @@ namespace Server
 
             ChannelFactory<IDataBase> factory = new ChannelFactory<IDataBase>("DataBase");
             IDataBase kanal = factory.CreateChannel();
-            DataBaseType dbtype;
+            
 
             if (ConfigurationManager.AppSettings["database"].ToLower() == "xml")
             {

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,6 +27,11 @@ namespace Client
                 Console.WriteLine("Niste uneli dobru putanju");
             }
             Helper.LoadData(path2, FileType.OSTVARENO);
+
+            Console.WriteLine("Pristupamo proracunu!");
+            Helper.Calculate();
+            Console.WriteLine("Zavrsen proracun i azurirana je baza podataka");
+
             Console.ReadLine();
 
         }

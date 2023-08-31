@@ -73,6 +73,24 @@ namespace DataBase
         }
 
 
+        public void UpdateLoads(List<Load> loads, DataBaseType dbtype)
+        {
+            switch (dbtype)
+            {
+                case DataBaseType.INMEMORY:
+                    UpdateLoadsInMemory(loads);
+                    break;
+                case DataBaseType.XML:
+                    UpdateLoadsXML(loads);
+                    break;
+                default: break;
+            }
+        }
+
+       
+
+
+
         //Private funkcije za rad sa XML bazom
         private void AddAuditXML(Audit audit)
         {
@@ -382,6 +400,59 @@ namespace DataBase
             return loads;
         }
 
+        private void UpdateLoadsXML(List<Load> loads)
+        {
+            XmlDocument doc = new XmlDocument();
+            XmlDeclaration xmlDeclaration = doc.CreateXmlDeclaration("1.0", "UTF-8", null);
+            doc.AppendChild(xmlDeclaration);
+            XmlElement stavke = doc.CreateElement("STAVKE");
+            doc.AppendChild(stavke);
+            foreach(Load load in loads)
+            {
+                XmlElement row = doc.CreateElement("row");
+
+                XmlElement id = doc.CreateElement("ID");
+                XmlText idValue = doc.CreateTextNode(load.Id.ToString());
+                id.AppendChild(idValue);
+                row.AppendChild(id);
+
+                XmlElement timeStamp = doc.CreateElement("TIME_STAMP");
+                XmlText timeStampValue = doc.CreateTextNode(load.Timestamp.ToString("yyyy-MM-dd HH:mm"));
+                timeStamp.AppendChild(timeStampValue);
+                row.AppendChild(timeStamp);
+
+                XmlElement forecast = doc.CreateElement("FORECAST_VALUE");
+                XmlText forecastValue = doc.CreateTextNode(load.ForecastValue.ToString());
+                forecast.AppendChild(forecastValue);
+                row.AppendChild(forecast);
+
+                XmlElement measured = doc.CreateElement("MEASURED_VALUE");
+                XmlText measuredValue = doc.CreateTextNode(load.MeasuredValue.ToString());
+                measured.AppendChild(measuredValue);
+                row.AppendChild(measured);
+
+                XmlElement apd = doc.CreateElement("ABSOLUTE_PERCENTAGE_DEVIATION");
+                XmlText apdValue = doc.CreateTextNode(load.AbsolutePercentageDeviation.ToString());
+                apd.AppendChild(apdValue);
+                row.AppendChild(apd);
+
+                XmlElement squaredDeviation = doc.CreateElement("SQUARED_DEVIATION");
+                XmlText squaredDeviationValue = doc.CreateTextNode(load.SquareDeviation.ToString());
+                squaredDeviation.AppendChild(squaredDeviationValue);
+                row.AppendChild(squaredDeviation);
+
+                XmlElement ifID = doc.CreateElement("IMPORTED_FILE_ID");
+                XmlText ifIDValue = doc.CreateTextNode(load.ImportedFileId.ToString());
+                ifID.AppendChild(ifIDValue);
+                row.AppendChild(ifID);
+
+
+                stavke.AppendChild(row);
+            }
+            doc.Save(pathToXML + "TBL_LOAD.xml");
+
+        }
+
 
         //Private funkcije za rad sa In-Memory bazom
         private void AddAuditInMemory(Audit audit)
@@ -436,7 +507,15 @@ namespace DataBase
             }
             return -1;
         }
-
+        private void UpdateLoadsInMemory(List<Load> loads)
+        {
+            Dictionary<uint, Load> updateDataBase = new Dictionary<uint, Load>();
+            foreach(Load load in loads)
+            {
+                updateDataBase.Add(load.Id, load);
+            }
+            LoadDataBase = updateDataBase;
+        }
         //Pomocne funckije
     }
 }

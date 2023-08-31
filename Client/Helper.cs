@@ -38,5 +38,11 @@ namespace Client
                     }
                 }
         }
+        public static void Calculate()
+        {
+            ChannelFactory<IServis> factory = new ChannelFactory<IServis>("Server");
+            IServis kanal = factory.CreateChannel();
+            kanal.Calculate();
+        }
     }
 }

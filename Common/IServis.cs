@@ -8,10 +8,15 @@ using System.Threading.Tasks;
 
 namespace Common
 {
+  
+
+
     [ServiceContract]
     public interface IServis
     {
         [OperationContract]
         void Load(MemoryStream memoryStream, string fileName, FileType fileType);
+        [OperationContract]
+        void Calculate();
     }
 }

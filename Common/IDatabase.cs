@@ -27,6 +27,8 @@ namespace Common
         void AddImportedFile(ImportedFile importedFile, DataBaseType dbtype);
         [OperationContract]
         List<Load> ReadLoad(DataBaseType dbtype);
+        [OperationContract]
+        void UpdateLoads(List<Load> loads, DataBaseType dbtype);
 
     }
 }
