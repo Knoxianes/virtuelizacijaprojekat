@@ -11,32 +11,50 @@ namespace Client
 {
     public static  class Helper
     {
-        public static void LoadData(string path, FileType fileType)
+        //Pomocna funckija za ucitavanje podataka iz direktorijuma csv fajlova  u bazu podataka
+        public static bool LoadData(string path, FileType fileType)
         {
             string[]files = Directory.GetFiles(path);
             if (files == null || files.Length <= 0)
             {
-                return;
+                return false;
             }
             ChannelFactory<IServis> factory = new ChannelFactory<IServis>("Server");
             IServis kanal = factory.CreateChannel();
 
-                foreach (string file in files)
+            foreach (string file in files)
+            {
+                string fileName = file.Split('\\')[file.Split('\\').Length - 1];
+                fileName = fileName.Trim();
+                string typeOfFile = fileName.Split('_')[0];
+                if( fileType == FileType.OSTVARENO)
                 {
-                    using (MemoryStream memoryStream = new MemoryStream())
+                    if(typeOfFile != "ostv")
                     {
-
-                        using (FileStream fileStream = new FileStream(file, FileMode.Open, FileAccess.Read))
-                        {
-                        
-                            fileStream.CopyTo(memoryStream);
-                            memoryStream.Position = 0;
-                            kanal.Load(memoryStream, file.Split('\\')[file.Split('\\').Length - 1],fileType);
-                        
-                        
-                        }
+                        return false;
                     }
                 }
+                else
+                {
+                    if (typeOfFile != "prog")
+                    {
+                        return false;
+                    }
+                }
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    using (FileStream fileStream = new FileStream(file, FileMode.Open, FileAccess.Read))
+                    {
+                    
+                        fileStream.CopyTo(memoryStream);
+                        memoryStream.Position = 0;
+                        kanal.Load(memoryStream,fileName ,fileType);
+                    
+                    
+                    }
+                }
+            }
+            return true;
         }
         public static void Calculate()
         {

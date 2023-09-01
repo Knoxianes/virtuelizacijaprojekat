@@ -13,10 +13,11 @@ namespace DataBase
 {
     public class DataBaseServis : IDataBase
     {
+        // In-memory baze podataka
         public static Dictionary<uint,Audit> AuditDataBase = new Dictionary<uint,Audit>();
         public static Dictionary<uint, Load> LoadDataBase = new Dictionary<uint, Load>();
         public static Dictionary<uint, ImportedFile> ImportedFileDataBase = new Dictionary<uint, ImportedFile>();
-        private string pathToXML = "C:\\Users\\strah\\OneDrive\\Dokumenti\\GitHub\\virtuelizacijaprojekat\\DataBase\\";
+        private readonly string pathToXML = "C:\\Users\\strah\\OneDrive\\Dokumenti\\GitHub\\virtuelizacijaprojekat\\DataBase\\";
         public void AddAudit(Audit audit, DataBaseType dbtype)
         {
             switch (dbtype)
@@ -91,7 +92,7 @@ namespace DataBase
 
 
 
-        //Private funkcije za rad sa XML bazom
+        //Funkcije za rad sa XML bazom
         private void AddAuditXML(Audit audit)
         {
             if(!File.Exists(pathToXML + "TBL_AUDIT.xml"))
@@ -350,6 +351,7 @@ namespace DataBase
             }
         }
 
+        // Pomocna funckija za proveru da li postoji vec podatak u xml bazi ako postoji vraca row sa tim podatkom
         private XmlNode  LoadExistsXML(Load load,XmlDocument doc)
         {
             XmlElement stavke = doc.DocumentElement;
@@ -364,6 +366,7 @@ namespace DataBase
             return null;
         }
 
+        // Pomocna funkcija za proveru dece od reda u kome se mozda nalazi podatak
         private bool checkChild(XmlNodeList parent,Load load)
         {
             foreach(XmlNode child in parent)
@@ -380,6 +383,7 @@ namespace DataBase
             return false;
         }
 
+        // Funckija za citanje xml baze Load podataka
         private List<Load> ReadLoadXML()
         {
             List<Load> loads = new List<Load>();
@@ -400,6 +404,7 @@ namespace DataBase
             return loads;
         }
 
+        // Funckija za azuriranje xml baze Load podataka
         private void UpdateLoadsXML(List<Load> loads)
         {
             XmlDocument doc = new XmlDocument();
@@ -487,6 +492,8 @@ namespace DataBase
                 }
             }
         }
+
+        // Funkcija za citanje cele in-memory baze load podataka
         private List<Load> ReadLoadInMemory()
         {
             List<Load> loads = new List<Load>();
@@ -496,6 +503,8 @@ namespace DataBase
             }
             return loads;
         }
+
+        // Pomocna funckija za proveru dali postoji Load podataka u in-memory bazi
         private int LoadExistsInMemory(Load load)
         {
             foreach (var key in LoadDataBase.Keys)
@@ -507,6 +516,8 @@ namespace DataBase
             }
             return -1;
         }
+
+        // Funckija za azuriranje in-memory baze
         private void UpdateLoadsInMemory(List<Load> loads)
         {
             Dictionary<uint, Load> updateDataBase = new Dictionary<uint, Load>();
@@ -516,6 +527,5 @@ namespace DataBase
             }
             LoadDataBase = updateDataBase;
         }
-        //Pomocne funckije
     }
 }
