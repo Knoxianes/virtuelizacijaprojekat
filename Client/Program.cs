@@ -75,14 +75,14 @@ namespace Client
             bool error = Helper.LoadData(path, FileType.OSTVARENO);
             if (!error)
             {
-                odgovor = "Doslo je do greske, fajl nije lepo imenovan ili direktorijum je prazan!\n\t\t Proverite da li ste dobru putanju do direktorijuma uneli!";
+                odgovor = "Doslo je do greške, fajl nije lepo imenovan ili direktorijum je prazan!\n\t\t Proverite da li ste dobru putanju do direktorijuma uneli!";
                 Console.Clear();
                 return;
             }
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("\tServer pocinje proracunavanje !");
+            Console.WriteLine("\tServer počinje proračunavanje !");
             Helper.Calculate();
-            odgovor = "Uspesno izracunato";
+            odgovor = "Uspesno izračunato";
             Console.Clear();
 
         }
@@ -107,14 +107,14 @@ namespace Client
             bool error = Helper.LoadData(path, FileType.PROGNOZIRANO);
             if (!error)
             {
-                odgovor = " Doslo je do greske, fajl nije lepo imenovan ili direktorijum je prazan!\n\t\t Proverite da li ste dobru putanju do direktorijuma uneli!";
+                odgovor = " Doslo je do greške, fajl nije lepo imenovan ili direktorijum je prazan!\n\t\t Proverite da li ste dobru putanju do direktorijuma uneli!";
                 Console.Clear();
                 return;
             }
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("\tServer pocinje proracunavanje !");
+            Console.WriteLine("\tServer počinje proračunavanje !");
             Helper.Calculate();
-            odgovor = "Uspesno izracunato";
+            odgovor = "Uspesno izračunato";
             Console.Clear();
         }
     }

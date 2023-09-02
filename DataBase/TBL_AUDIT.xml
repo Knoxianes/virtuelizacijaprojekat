@@ -36,4 +36,40 @@
     <MESSAGE_TYPE>Info</MESSAGE_TYPE>
     <MESSAGE_TYPE>Datoteka ostv_2023_01_24.csv je uspesno procitana</MESSAGE_TYPE>
   </row>
+  <row>
+    <ID>1</ID>
+    <TIME_STAMP>2023-09-02 11:37:52</TIME_STAMP>
+    <MESSAGE_TYPE>Info</MESSAGE_TYPE>
+    <MESSAGE_TYPE>Datoteka prog_2023_01_18.csv je uspesno procitana</MESSAGE_TYPE>
+  </row>
+  <row>
+    <ID>2</ID>
+    <TIME_STAMP>2023-09-02 11:37:53</TIME_STAMP>
+    <MESSAGE_TYPE>Info</MESSAGE_TYPE>
+    <MESSAGE_TYPE>Datoteka prog_2023_01_19.csv je uspesno procitana</MESSAGE_TYPE>
+  </row>
+  <row>
+    <ID>3</ID>
+    <TIME_STAMP>2023-09-02 11:37:54</TIME_STAMP>
+    <MESSAGE_TYPE>Info</MESSAGE_TYPE>
+    <MESSAGE_TYPE>Datoteka prog_2023_01_20.csv je uspesno procitana</MESSAGE_TYPE>
+  </row>
+  <row>
+    <ID>4</ID>
+    <TIME_STAMP>2023-09-02 11:37:55</TIME_STAMP>
+    <MESSAGE_TYPE>Info</MESSAGE_TYPE>
+    <MESSAGE_TYPE>Datoteka prog_2023_01_21.csv je uspesno procitana</MESSAGE_TYPE>
+  </row>
+  <row>
+    <ID>5</ID>
+    <TIME_STAMP>2023-09-02 11:37:56</TIME_STAMP>
+    <MESSAGE_TYPE>Info</MESSAGE_TYPE>
+    <MESSAGE_TYPE>Datoteka prog_2023_01_22.csv je uspesno procitana</MESSAGE_TYPE>
+  </row>
+  <row>
+    <ID>6</ID>
+    <TIME_STAMP>2023-09-02 11:37:57</TIME_STAMP>
+    <MESSAGE_TYPE>Info</MESSAGE_TYPE>
+    <MESSAGE_TYPE>Datoteka prog_2023_01_24.csv je uspesno procitana</MESSAGE_TYPE>
+  </row>
 </STAVKE>

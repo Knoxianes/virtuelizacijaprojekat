@@ -24,4 +24,28 @@
     <ID>6</ID>
     <FILE_NAME>ostv_2023_01_24.csv</FILE_NAME>
   </row>
+  <row>
+    <ID>1</ID>
+    <FILE_NAME>prog_2023_01_18.csv</FILE_NAME>
+  </row>
+  <row>
+    <ID>2</ID>
+    <FILE_NAME>prog_2023_01_19.csv</FILE_NAME>
+  </row>
+  <row>
+    <ID>3</ID>
+    <FILE_NAME>prog_2023_01_20.csv</FILE_NAME>
+  </row>
+  <row>
+    <ID>4</ID>
+    <FILE_NAME>prog_2023_01_21.csv</FILE_NAME>
+  </row>
+  <row>
+    <ID>5</ID>
+    <FILE_NAME>prog_2023_01_22.csv</FILE_NAME>
+  </row>
+  <row>
+    <ID>6</ID>
+    <FILE_NAME>prog_2023_01_24.csv</FILE_NAME>
+  </row>
 </STAVKE>
